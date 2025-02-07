@@ -9,21 +9,35 @@
 .header {
     height: 80vh;
     width: 100%;
-    background-image: linear-gradient(rgba(3, 6, 29, 0.6), rgba(3, 6, 29, 0.6)), url(images/header-image.avif);
+    background-image: linear-gradient(rgba(3, 6, 29, 0.6), rgba(3, 6, 29, 0.6)), url(images/web5.avif);
     background-size: cover;
     background-position: center;
+    overflow: hidden;
 }
+
+#particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
 
 .header .hero-info {
     position: absolute;
     top: 30%;
     left: 28%;
-    background-color: rgba(51, 51, 51, 0.5);
+    background-color: rgba(51, 51, 51, 0.2);
+   z-index: 2;
 }
 
 .btn-hero {
     text-align: center;
 }
+
+
 
 .btn-hero button {
     background-color: transparent;
@@ -53,6 +67,7 @@
 .navbar-nav {
     display: flex;
     list-style-type: none;
+    z-index: 2;
 }
 
 .nav-item {
@@ -93,23 +108,12 @@ card{
     width: 90%;
     color: white;
     margin: 50px auto;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7));
+    background-color: #111;
 }
 .ctasection{
     padding: 30px 0;
     text-align: center;
 }
-/* Video styles */
-.cta-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: 1;
-    opacity: 0.8; 
-  }
 
   .ctasection {
     position: relative;
@@ -150,15 +154,18 @@ card{
 
     .navbar-nav.show {
         display: block;
+        
     }
 
     .navbar-toggler {
         background-color: transparent;
         border: none;
+       
     }
 
     .navbar-toggler-icon {
         background-color: pink;
+       
     }
 
     .nav-menu {
@@ -168,7 +175,14 @@ card{
     }
     
     
+    
 }
+@media (max-width: 768px) {
+    #particles-js {
+      display: none;
+    }
+  }
+  
 
 
 
