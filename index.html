@@ -13,16 +13,16 @@
 <body>
     <section class="header mx-auto mb-5">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand text-warning" href="index.html"><img src="/images/burner-tech-logo.png" width="100px" alt=""></a>
+            <a class="navbar-brand text-warning" href="/"><img src="/images/burner-tech-logo.png" width="100px" alt=""></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/services">Our Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
                 </ul>
             </div>
         </nav>
@@ -107,25 +107,54 @@
     </section>
 
     <section class="cta my-5 p-5 position-relative">
-        <div class="gradient-overlay"></div>
-        <div class="ctasection d-flex flex-column justify-content-center align-center position-relative text-white">
+      <div class="gradient-overlay"></div>
+      <div class="ctasection d-flex flex-column justify-content-center align-center position-relative text-white">
           <div id="particles-js"></div>
           <div style="z-index: 2;">
-          <h2 class="text-center fw-bold pb-3">Call To Action</h2>
-          <h4 class="text-center pb-3">Separate the <span class="text-warning">best</span> from the rest</h4>
-          <div class="btncta">
-            <button class="cta-btn w-25 py-2 px-1" style="z-index: 7;">Give Us A Call</button>
+              <h2 class="text-center fw-bold pb-3">Call To Action</h2>
+              <h4 class="text-center pb-3">Separate the <span class="text-warning">best</span> from the rest</h4>
+              <div class="btncta">
+                  <!-- Button Triggering the Modal -->
+                  <button class="cta-btn w-25 py-2 px-1" style="z-index: 7;" data-bs-toggle="modal" data-bs-target="#contactModal">
+                      Give Us A Call
+                  </button>
+              </div>
           </div>
+      </div>
+  </section>
+  
+  <!-- Modal Component -->
+  <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content bg-dark text-white">
+              <div class="modal-header">
+                  <h5 class="modal-title" id="contactModalLabel">Contact Information</h5>
+                  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <p><strong>Phone:</strong> +123 456 7890</p>
+                  <p><strong>Email:</strong> support@burner-tech.com</p>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-warning" data-bs-dismiss="modal">Close</button>
+              </div>
           </div>
-        </div>
-    </section>
+      </div>
+  </div>
+  
 
-    <section class="testimonials my-5 py-5" style="background-color: #FFFDD0;">
-        <h2 class="text-center">Testimonials</h2>
+    
+
+
+    <section class="testimonials my-5 py-5 text-center" style="background-color: #FFFDD0;">
+        <h2 class="text-center mb-5">Testimonials</h2>
         <div class="container">
           <div class="row">
             <div class="col-md-3">
                <div class="card">
+                <div class="card-img text-center">
+                  <img src="/images/test1.avif" alt="" style="width: 80px; height: 80px; border-radius: 50%;">
+                </div>
                 <div class="card-body">
                   <div class="card-text">
                     <p>"Burner~Tech transformed our business operations with their impeccable network solutions."</p>
@@ -136,6 +165,9 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
+                  <div class="card-img text-center">
+                    <img src="/images/test2.avif" alt="" style="width: 80px; height: 80px; border-radius: 50%;">
+                  </div>
                  <div class="card-body">
                    <div class="card-text">
                      <p>"Amazing web design services! Our website now attracts more traffic than ever."</p>
@@ -146,6 +178,9 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
+                  <div class="card-img text-center">
+                    <img src="/images/test3.avif" alt="" style="width: 80px; height: 80px; border-radius: 50%;">
+                  </div>
                  <div class="card-body">
                    <div class="card-text">
                      <p>"Thanks to Burner~Tech's cybersecurity services, we feel much safer online."</p>
@@ -156,6 +191,9 @@
             </div>
             <div class="col-md-3">
                 <div class="card">
+                  <div class="card-img text-center">
+                    <img src="/images/test4.avif" alt="" style="width: 80px; height: 80px; border-radius: 50%;">
+                  </div>
                  <div class="card-body">
                    <div class="card-text">
                      <p>"Their professionalism and efficiency are second to none. Highly recommended!"</p>
@@ -179,10 +217,10 @@
             <div class="col-md-4 mb-3">
               <h5 class="text-uppercase">Quick Links</h5>
               <ul class="list-unstyled">
-                <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-                <li><a href="services.html" class="text-white text-decoration-none">Our Services</a></li>
-                <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-                <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                <li><a href="/services" class="text-white text-decoration-none">Our Services</a></li>
+                <li><a href="/about" class="text-white text-decoration-none">About</a></li>
+                <li><a href="/contact" class="text-white text-decoration-none">Contact Us</a></li>
               </ul>
             </div>
             <div class="col-md-4 mb-3">

@@ -12,19 +12,19 @@
 <body>
     <section class="header mx-auto mb-5" style="height:50vh;">
         <nav class="navbar navbar-expand-lg navbar-dark">
-            <a class="navbar-brand" href="index.html"><img src="/images/burner-tech-logo.png" width="100px" alt=""></a>
+            <a class="navbar-brand" href="/"><img src="/images/burner-tech-logo.png" width="100px" alt=""></a>
             <!-- Hamburger Icon for Mobile -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Navbar Links -->
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="services.html">Our Services</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
-                </ul>
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="/services">Our Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="/about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="/contact">Contact Us</a></li>
+            </ul>
             </div>
         </nav>
         <div class="hero-info w-50 mx-auto text-light" style="position: absolute; top: 20%;">
@@ -45,18 +45,18 @@
         <!-- Contact Form -->
         <div class="col-md-6 mb-4">
           <h4 class="mb-4">Send Us a Message</h4>
-          <form action="#" method="POST">
+          <form action="/submit" method="POST">
             <div class="mb-3">
               <label for="name" class="form-label">Your Name</label>
-              <input type="text" class="form-control" id="name" placeholder="John Doe" required>
+              <input type="text" name="name" class="form-control" id="name" placeholder="John Doe" required>
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Your Email</label>
-              <input type="email" class="form-control" id="email" placeholder="johndoe@example.com" required>
+              <input type="email" name="email" class="form-control" id="email" placeholder="johndoe@example.com" required>
             </div>
             <div class="mb-3">
               <label for="message" class="form-label">Your Message</label>
-              <textarea class="form-control" id="message" rows="5" placeholder="How can we help you?" required></textarea>
+              <textarea class="form-control" name="message" id="message" rows="5" placeholder="How can we help you?" required></textarea>
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
@@ -96,10 +96,10 @@
         <div class="col-md-4 mb-3">
           <h5 class="text-uppercase">Quick Links</h5>
           <ul class="list-unstyled">
-            <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
-            <li><a href="services.html" class="text-white text-decoration-none">Our Services</a></li>
-            <li><a href="about.html" class="text-white text-decoration-none">About</a></li>
-            <li><a href="contact.html" class="text-white text-decoration-none">Contact Us</a></li>
+            <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+            <li><a href="/services" class="text-white text-decoration-none">Our Services</a></li>
+            <li><a href="/about" class="text-white text-decoration-none">About</a></li>
+            <li><a href="/contact" class="text-white text-decoration-none">Contact Us</a></li>
           </ul>
         </div>
 
